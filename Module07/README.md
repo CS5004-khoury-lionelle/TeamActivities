@@ -35,10 +35,10 @@ class with less boilerplate code.
 ### Java Records
 
 `Record` classes are a new feature in Java 16+ that allow you to create simple data classes with less boilerplate code. They all have the following properties:
-    * They are immutable
-    * They have a `toString()` method that prints out the values of the fields
-    * They have an `equals()` and `hashCode()` method that compares the values of all the fields
-    * They can to extend other classes (because they extend the `java.lang.Record` class), but they can use implements to implement interfaces. 
+  * They are immutable
+  * They have a `toString()` method that prints out the values of the fields
+  * They have an `equals()` and `hashCode()` method that compares the values of all the fields
+  * They cannot extend other classes (because they extend the `java.lang.Record` class), but they can use implements to implement interfaces. 
 
 They can be used at the top level of a file, or as a nested class. They can even be declared inline if you need a temp object to store information.
 
